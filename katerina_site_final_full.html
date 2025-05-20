@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Катерина Сочнева — Обучение мастеров маникюра</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #fffaf5;
+            color: #1f1f1f;
+        }
+        header {
+            background: linear-gradient(90deg, #dcd1f5, #fff4d3);
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header img {
+            width: 180px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+        header h1 {
+            margin: 10px 0 0;
+            font-size: 2.6rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 10px auto 30px;
+        }
+        .cta-button {
+            background-color: #dcd1f5;
+            color: #1f1f1f;
+            padding: 12px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #bba7e6;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        .courses, .tariffs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .course, .tariff {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+            padding: 24px;
+            max-width: 350px;
+            flex: 1 1 300px;
+        }
+        .course img, .about img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .course h2, .tariff h3 {
+            margin-top: 0;
+            color: #6741d9;
+        }
+        .course ul, .tariff ul {
+            padding-left: 20px;
+        }
+        .price {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .about {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+        }
+        .about-text {
+            flex: 1 1 400px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="photo_header.jpg" alt="Катерина Сочнева">
+    <h1>Катерина Сочнева</h1>
+    <p>Инструктор по маникюру. Обучаю мастеров быстро, качественно и с заботой о здоровье ногтей. Только практика, никакой воды!</p>
+    <a href="#courses" class="cta-button">Посмотреть курсы</a>
+</header>
+
+<section class="about">
+    <div class="about-text">
+        <h2>Обо мне</h2>
+        <p>Здравствуйте! Меня зовут Катерина, я инструктор по маникюру с более чем 6-летним опытом работы в индустрии красоты и более чем годом преподавания. За это время я успела обучить множество мастеров, которые сегодня уверенно работают с клиентами и растут в профессии.</p>
+        <p>Я убеждена: не бывает «неподходящих рук» — бывает нехватка системных знаний. Именно поэтому мои курсы выстроены вокруг практики, пошаговых алгоритмов и персонального подхода к каждому ученику.</p>
+        <p>Я обучаю авторским скоростным техникам, которые позволяют делать идеальный маникюр за короткое время без ущерба качеству, и делаю акцент на здоровье ногтей под покрытием. Мои ученики всегда получают обратную связь и поддержку на каждом этапе.</p>
+    </div>
+    <img src="course2.jpg" alt="Катерина в работе">
+</section>
+
+<section id="courses" class="courses">
+    <div class="course">
+        <img src="course1.jpg" alt="Базовый курс">
+        <h2>Базовый курс</h2>
+        <p><strong>Формат:</strong> очно | <strong>Длительность:</strong> 5 дней</p>
+        <p>Идеально для начинающих и тех, у кого есть пробелы в знаниях. Закладывает прочную базу и уверенность.</p>
+        <ul>
+            <li>Уверенность в технике</li>
+            <li>Понимание всех этапов</li>
+            <li>Умение выполнять маникюр самостоятельно</li>
+        </ul>
+        <p class="price">35 000 ₽ — индивидуально<br>28 000 ₽ — в группе (до 4 человек)</p>
+    </div>
+
+    <div class="course">
+        <img src="course2.jpg" alt="Повышение квалификации: техника">
+        <h2>Повышение квалификации: Техника</h2>
+        <p><strong>Формат:</strong> очно | <strong>Длительность:</strong> 1 день</p>
+        <p>Работа с разными типами ногтей, углубление в архитектуру, отработка сложных случаев и обратная связь.</p>
+        <ul>
+            <li>Работа с любыми формами</li>
+            <li>Разбор сложных ногтей</li>
+            <li>Поддержка 2 недели</li>
+        </ul>
+        <p class="price">15 000 ₽ — индивидуально<br>9 000 ₽ — в группе</p>
+    </div>
+
+    <div class="course">
+        <img src="course1.jpg" alt="Повышение квалификации: скорость">
+        <h2>Повышение квалификации: Скорость</h2>
+        <p><strong>Формат:</strong> очно | <strong>Длительность:</strong> 2 дня</p>
+        <p>Научитесь работать быстрее без потери качества. Оптимизация процессов, техника, организация, клиентский сервис.</p>
+        <ul>
+            <li>Ускорение от 30 до 60 минут</li>
+            <li>Четкие пошаговые алгоритмы</li>
+            <li>Уверенность и эффективность</li>
+        </ul>
+        <p class="price">20 000 ₽ — индивидуально<br>15 000 ₽ — в группе (до 4 человек)</p>
+    </div>
+</section>
+
+<section class="tariffs">
+    <div class="tariff">
+        <h3>Индивидуальный курс</h3>
+        <ul>
+            <li>Полное внимание преподавателя</li>
+            <li>Работа в комфортном темпе</li>
+            <li>Гибкий график</li>
+            <li>1 на 1 с моделью</li>
+        </ul>
+        <p class="price">от 15 000 ₽ до 35 000 ₽</p>
+    </div>
+    <div class="tariff">
+        <h3>Групповой курс</h3>
+        <ul>
+            <li>До 4 учеников в группе</li>
+            <li>Живое общение и обмен опытом</li>
+            <li>Обратная связь каждому</li>
+            <li>Доступная цена</li>
+        </ul>
+        <p class="price">от 9 000 ₽ до 28 000 ₽</p>
+    </div>
+</section>
+
+
+<section style="padding: 40px 20px; background-color: #fef6ff;">
+    <h2 style="text-align:center; color: #6741d9;">Отзывы учеников</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 1100px; margin: 0 auto;">
+        <div style="background: white; border-radius: 12px; padding: 20px; max-width: 300px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+            <p>“Катя — невероятный педагог! Я пришла без опыта, а теперь уверенно работаю с клиентами. На курсе всё по полочкам, очень живая подача и постоянная поддержка.”</p>
+            <p style="font-weight:bold; margin-top: 10px;">— Алина М., г. Казань</p>
+        </div>
+        <div style="background: white; border-radius: 12px; padding: 20px; max-width: 300px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+            <p>“Была на курсе по скорости — сэкономила 40 минут на каждом клиенте! Катерина даёт реальный подход, который сразу внедряется в работу. Спасибо!”</p>
+            <p style="font-weight:bold; margin-top: 10px;">— Ирина Л., г. Екатеринбург</p>
+        </div>
+        <div style="background: white; border-radius: 12px; padding: 20px; max-width: 300px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+            <p>“Научилась работать с трудными ногтями — трапеции и клюющие теперь не пугают! Очень рада, что выбрала именно Катю. Профессионал с душой!”</p>
+            <p style="font-weight:bold; margin-top: 10px;">— Юлия С., г. Сочи</p>
+        </div>
+    </div>
+</section>
+
+
+<section style="padding: 40px 20px; text-align: center; background-color: #f9f3ff;">
+    <h2 style="color: #6741d9;">Контакты</h2>
+    <p>Хочешь записаться на курс или задать вопрос?</p>
+    <p>Пиши мне в Telegram или Instagram:</p>
+    <p style="margin-top: 20px;">
+        <a href="https://t.me/sssochnevaaa" target="_blank" style="text-decoration: none; color: #fff; background-color: #0088cc; padding: 10px 20px; border-radius: 30px;">@sssochnevaaa</a>
+    </p>
+    <p style="margin-top: 10px;">
+        <a href="https://www.instagram.com/sochi.nik?igsh=NW5mbmkwczd3enZh" target="_blank" style="text-decoration: none; color: #fff; background-color: #e1306c; padding: 10px 20px; border-radius: 30px;">Instagram: @sochi.nik</a>
+    </p>
+</section>
+
+</body>
+</html>
